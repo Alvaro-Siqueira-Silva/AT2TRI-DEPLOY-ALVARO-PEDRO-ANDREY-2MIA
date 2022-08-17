@@ -27,7 +27,7 @@
         <% for (var n=0; n<resultado.length; n++){%>
             <tr>
                 <td><%=resultado[n].produto%></td>
-                <td><%=resultado[n].data.getDate()+1%>/<%=resultado[n].data.getMonth()+1%>/<%=resultado[n].data.getFullYear()%></td>
+                <td><%=resultado[n].data.getDate()+1%>/<%=resultado[n].data.getMonth()%>/<%=resultado[n].data.getFullYear()%></td>
                 <td><a href="/alterar?id=<%=resultado[n]._id%>" class="btn btn-warning btn-sm">Alterar</a></td>
                 <td><a href="/consumido?id=<%=resultado[n]._id%>" class="btn btn-info btn-sm">Consumido</a></td>
                 <td><a href="/descartar?id=<%=resultado[n]._id%>" class="btn btn-info btn-sm">Descartado</a></td>
