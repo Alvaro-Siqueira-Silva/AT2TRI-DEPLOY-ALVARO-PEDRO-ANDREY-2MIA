@@ -19,7 +19,7 @@
                     <label for="" required class="form-control bg-secondary text-light">Produto:</label>
                     <input type="text" name="produto" required class="form-control bg" placeholder="Produto" id="" value="<%=alterar.produto%>">
                     <label for="" class="form-control bg-secondary text-light">Data de validade:</label>
-                    <input type="date" required name="data" class="form-control" id="" value="<%=alterar.data.toISOString().slice(0,10)%>">
+                    <input type="date" required name="data" class="form-control" id="" value="<%=alterar.data%>">
                         <div class="input-group">
                         <input type="button" value="Voltar" class="form-control btn btn-info" onclick="history.back()">
                         <input type="submit" value="Alterar" class="form-control btn btn-warning">
